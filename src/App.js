@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import Navbar from './components/Navbar';
+import Home from './components/sections/Home';
+import About from './components/sections/About';
+import Education from './components/sections/Education';
+import Experience from './components/sections/Experience';
+import Organization from './components/sections/Organization';
+import Skill from './components/sections/Skill';
+import Project from './components/sections/Project';
+import Footer from './components/Footer';
 
-function App() {
+export default function BasicButtons() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+       <div style={{ paddingTop: 20 }} />
+      <Home />
+      <About />
+      <Education />
+      <Experience />
+      <Organization />
+      <Skill />
+      <Project />
+      <Footer />
     </div>
   );
 }
-
-export default App;
